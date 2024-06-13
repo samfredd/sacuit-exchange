@@ -18,7 +18,7 @@ class _BottomNavState extends State<BottomNav> {
   static final List<Widget> _widgetOptions = <Widget>[
     const HomePage(),
     const WalletScreen(),
-    const TransactionsScreen(),
+    const Trade(),
     const SettingsScreen(),
   ];
 
@@ -80,7 +80,7 @@ class _BottomNavState extends State<BottomNav> {
                                 ),
                                 GButton(
                                   icon: Icons.compare_arrows_outlined,
-                                  text: 'Transactions',
+                                  text: 'Trade',
                                 ),
                                 GButton(
                                   icon: Icons.settings_outlined,

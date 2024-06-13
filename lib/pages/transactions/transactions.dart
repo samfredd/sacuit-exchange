@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sacuit_exchange/widgets/topbar.dart';
 
-class TransactionsScreen extends StatelessWidget {
-  const TransactionsScreen({super.key});
+class Trade extends StatelessWidget {
+  const Trade({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,7 @@ class TransactionsScreen extends StatelessWidget {
         children: [
           TopBar(
             title: Text(
-              "TRANSACTIONS",
+              "TRADE",
               style: TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.bold,

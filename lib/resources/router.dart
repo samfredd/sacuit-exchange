@@ -33,7 +33,7 @@ class Routes {
       case wallet:
         return MaterialPageRoute(builder: (_) => const WalletScreen());
       case transactionsPage:
-        return MaterialPageRoute(builder: (_) => const TransactionsScreen());
+        return MaterialPageRoute(builder: (_) => const Trade());
       case settingsPage:
         return MaterialPageRoute(builder: (_) => const SettingsScreen());
       default:
