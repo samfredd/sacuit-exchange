@@ -4,7 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 class AppThemes {
   static final lightTheme = ThemeData(
     primaryColor: Colors.white, // Main theme color
-    hintColor: const Color(0xFF800080), // Accent color
+    hintColor:
+        Color.fromARGB(255, 155, 155, 155).withOpacity(0.5), // Accent color
     scaffoldBackgroundColor: Colors.white,
     primaryColorDark: Colors.black,
     // Secondary background color
@@ -23,7 +24,7 @@ class AppThemes {
 
   static final darkTheme = ThemeData(
     primaryColor: const Color(0xFF121212), // Main theme color
-    hintColor: const Color(0xFF800080), // Accent color
+    hintColor: Color.fromARGB(255, 75, 75, 75), // Accent color
     scaffoldBackgroundColor:
         const Color(0xFF121212), // Primary background color
     primaryColorDark: Colors.white,

@@ -71,7 +71,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
-                    color: Colors.lightBlue,
+                    color: Color.fromARGB(255, 255, 255, 255),
                   ),
                 ),
               ),
@@ -94,8 +94,8 @@ class _OnboardingPageState extends State<OnboardingPage> {
                       dotHeight: 10,
                       dotWidth: 10,
                       spacing: 8.0,
-                      dotColor: Colors.lightBlue,
-                      activeDotColor: Colors.lightBlue,
+                      dotColor: Color.fromARGB(255, 255, 255, 255),
+                      activeDotColor: Color.fromARGB(255, 119, 0, 255),
                     ),
                     onDotClicked: (index) {},
                   ),
@@ -125,13 +125,14 @@ class _OnboardingPageState extends State<OnboardingPage> {
                       children: [
                         const TextSpan(
                           text: 'Already have an account? ',
-                          style:
-                              TextStyle(color: Colors.lightBlue, fontSize: 16),
+                          style: TextStyle(
+                              color: Color.fromARGB(255, 252, 252, 252),
+                              fontSize: 16),
                         ),
                         TextSpan(
                           text: 'Log In',
                           style: const TextStyle(
-                              color: Colors.lightBlue,
+                              color: Color.fromARGB(255, 197, 200, 202),
                               fontSize: 16,
                               fontWeight: FontWeight.bold),
                           recognizer: TapGestureRecognizer()
@@ -152,8 +153,8 @@ class _OnboardingPageState extends State<OnboardingPage> {
                       dotHeight: 10,
                       dotWidth: 10,
                       spacing: 8.0,
-                      dotColor: Colors.lightBlue,
-                      activeDotColor: Colors.lightBlue,
+                      dotColor: Color.fromARGB(255, 255, 255, 255),
+                      activeDotColor: Color.fromARGB(255, 119, 0, 255),
                     ),
                     onDotClicked: (index) {},
                   ),

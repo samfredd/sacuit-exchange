@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:sacuit_exchange/bottom%20sheets/buy_bottomsheet.dart';
+import 'package:sacuit_exchange/bottom%20sheets/sell_bootomsheet.dart';
+import 'package:sacuit_exchange/bottom%20sheets/swap_bottomsheet.dart';
 import 'package:sacuit_exchange/widgets/action_button.dart';
 import 'package:sacuit_exchange/widgets/news_tile.dart';
 import 'package:sacuit_exchange/widgets/price_tile.dart';
@@ -7,9 +10,25 @@ import 'package:sacuit_exchange/widgets/topbar.dart';
 import 'package:sacuit_exchange/widgets/transaction_card.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({
-    super.key,
-  });
+  const HomePage({super.key});
+
+  void _showBottomSheet(BuildContext context, String action) {
+    showModalBottomSheet(
+      context: context,
+      builder: (context) {
+        switch (action) {
+          case 'BUY':
+            return const BuyBottomSheet();
+          case 'SELL':
+            return const SellBottomSheet();
+          case 'SWAP':
+            return const SwapBottomSheet();
+          default:
+            return Container();
+        }
+      },
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -94,33 +113,19 @@ class HomePage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         ActionButtons(
-                          onPressed: () {},
+                          onPressed: () => _showBottomSheet(context, 'BUY'),
                           action: "BUY",
                         ),
                         ActionButtons(
-                          onPressed: () {},
+                          onPressed: () => _showBottomSheet(context, 'SELL'),
                           action: "SELL",
                         ),
                         ActionButtons(
-                          onPressed: () {},
+                          onPressed: () => _showBottomSheet(context, 'SWAP'),
                           action: "SWAP",
                         ),
                       ],
                     ),
-                    // SizedBox(
-                    //   height: 10,
-                    // ),
-                    // Row(
-                    //   children: [
-                    //     Text(
-                    //       "Trending",
-                    //       style: TextStyle(
-                    //         fontSize: 18,
-                    //         fontWeight: FontWeight.bold,
-                    //       ),
-                    //     ),
-                    //   ],
-                    // ),
                   ],
                 ),
               ),

@@ -20,6 +20,7 @@ class WhatWeOfferScreen extends StatelessWidget {
               const Text(
                 'Explore Cryptocurrency Markets',
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                textAlign: TextAlign.center,
               ),
               const SizedBox(height: 20),
               const Text(

@@ -19,7 +19,7 @@ class WelcomeScreen extends StatelessWidget {
             const Text(
               'Trade like a pro',
               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-              textAlign: TextAlign.start,
+              textAlign: TextAlign.center,
             ),
             const SizedBox(height: 20),
             const Text(

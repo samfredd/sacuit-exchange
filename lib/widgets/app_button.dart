@@ -46,7 +46,8 @@ class AppButton extends StatelessWidget {
                 width: width,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12.0),
-                  color: Colors.grey.withOpacity(0.2), // Slightly opaque base
+                  color: Color.fromARGB(255, 36, 35, 35),
+                  // Slightly opaque base
                   boxShadow: [
                     // Optional for added depth
                     BoxShadow(
@@ -55,14 +56,15 @@ class AppButton extends StatelessWidget {
                       spreadRadius: 2.0,
                     )
                   ],
-                  gradient: LinearGradient(
-                    colors: [
-                      Colors.white.withOpacity(0.5), // Semi-transparent white
-                      Colors.transparent, // Transparent end
-                    ],
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                  ),
+                  // gradient: LinearGradient(
+                  //   colors: [
+                  //     Color.fromARGB(255, 255, 255, 255)
+                  //         .withOpacity(0.5), // Semi-transparent white
+                  //     Color.fromARGB(255, 253, 250, 250), // Transparent end
+                  //   ],
+                  //   begin: Alignment.topLeft,
+                  //   end: Alignment.bottomRight,
+                  // ),
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
