@@ -31,8 +31,10 @@ class AppTextfield extends StatelessWidget {
         const SizedBox(height: 5.0),
         Container(
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(16.0),
-          ),
+              borderRadius: BorderRadius.circular(16.0),
+              border: Border.all(
+                color: Theme.of(context).primaryColorDark.withOpacity(0.2),
+              )),
           child: TextField(
             controller: controller,
             obscureText: isPassword,

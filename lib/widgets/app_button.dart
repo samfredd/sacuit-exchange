@@ -8,7 +8,7 @@ class AppButton extends StatelessWidget {
     this.icon,
     this.color = Colors.transparent,
     this.outlined = false,
-    this.textColor = Colors.white,
+    this.textColor,
     this.width,
   });
 
@@ -17,7 +17,7 @@ class AppButton extends StatelessWidget {
   final IconData? icon;
   final Color color;
   final bool outlined;
-  final Color textColor;
+  final Color? textColor;
   final double? width;
 
   @override
@@ -46,12 +46,13 @@ class AppButton extends StatelessWidget {
                 width: width,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12.0),
-                  color: Color.fromARGB(255, 36, 35, 35),
+                  color: Theme.of(context).primaryColorDark,
                   // Slightly opaque base
                   boxShadow: [
                     // Optional for added depth
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.1),
+                      color:
+                          Theme.of(context).primaryColorDark.withOpacity(0.5),
                       blurRadius: 10.0,
                       spreadRadius: 2.0,
                     )

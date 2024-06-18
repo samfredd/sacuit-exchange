@@ -66,12 +66,12 @@ class _OnboardingPageState extends State<OnboardingPage> {
                       duration: const Duration(milliseconds: 500),
                       curve: Curves.ease);
                 },
-                child: const Text(
+                child: Text(
                   "Skip",
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 255, 255, 255),
+                    color: Theme.of(context).primaryColorDark.withOpacity(0.6),
                   ),
                 ),
               ),
@@ -90,12 +90,13 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   SmoothPageIndicator(
                     controller: _pageController,
                     count: 3,
-                    effect: const ExpandingDotsEffect(
+                    effect: ExpandingDotsEffect(
                       dotHeight: 10,
                       dotWidth: 10,
                       spacing: 8.0,
-                      dotColor: Color.fromARGB(255, 255, 255, 255),
-                      activeDotColor: Color.fromARGB(255, 119, 0, 255),
+                      dotColor: Theme.of(context).primaryColorDark,
+                      activeDotColor:
+                          Theme.of(context).primaryColorDark.withOpacity(0.5),
                     ),
                     onDotClicked: (index) {},
                   ),
@@ -112,7 +113,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   AppButton(
                     width: 300,
                     text: "Sign Up",
-                    color: Colors.lightBlue,
+                    color: Theme.of(context).primaryColorDark,
                     onPressed: () {
                       Navigator.pushNamed(context, Routes.signupScreen);
                     },
@@ -123,16 +124,16 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   RichText(
                     text: TextSpan(
                       children: [
-                        const TextSpan(
+                        TextSpan(
                           text: 'Already have an account? ',
                           style: TextStyle(
-                              color: Color.fromARGB(255, 252, 252, 252),
+                              color: Theme.of(context).primaryColorDark,
                               fontSize: 16),
                         ),
                         TextSpan(
                           text: 'Log In',
-                          style: const TextStyle(
-                              color: Color.fromARGB(255, 197, 200, 202),
+                          style: TextStyle(
+                              color: Theme.of(context).primaryColorDark,
                               fontSize: 16,
                               fontWeight: FontWeight.bold),
                           recognizer: TapGestureRecognizer()
@@ -149,12 +150,13 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   SmoothPageIndicator(
                     controller: _pageController,
                     count: 3,
-                    effect: const ExpandingDotsEffect(
+                    effect: ExpandingDotsEffect(
                       dotHeight: 10,
                       dotWidth: 10,
                       spacing: 8.0,
-                      dotColor: Color.fromARGB(255, 255, 255, 255),
-                      activeDotColor: Color.fromARGB(255, 119, 0, 255),
+                      dotColor: Theme.of(context).primaryColorDark,
+                      activeDotColor:
+                          Theme.of(context).primaryColorDark.withOpacity(0.5),
                     ),
                     onDotClicked: (index) {},
                   ),

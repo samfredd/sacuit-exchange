@@ -8,6 +8,7 @@ class AppThemes {
         Color.fromARGB(255, 155, 155, 155).withOpacity(0.5), // Accent color
     scaffoldBackgroundColor: Colors.white,
     primaryColorDark: Colors.black,
+
     // Secondary background color
 
     textTheme: GoogleFonts.salsaTextTheme(

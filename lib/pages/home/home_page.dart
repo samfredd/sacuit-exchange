@@ -14,6 +14,7 @@ class HomePage extends StatelessWidget {
 
   void _showBottomSheet(BuildContext context, String action) {
     showModalBottomSheet(
+      backgroundColor: Theme.of(context).primaryColor,
       context: context,
       builder: (context) {
         switch (action) {

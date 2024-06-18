@@ -20,10 +20,11 @@ class SignUpScreen extends StatelessWidget {
                   const SizedBox(
                     height: 40,
                   ),
-                  const Text(
+                  Text(
                     "SIGN UP",
                     style: TextStyle(
-                        color: Colors.lightBlue,
+                        color:
+                            Theme.of(context).primaryColorDark.withOpacity(0.5),
                         fontSize: 40,
                         fontWeight: FontWeight.bold),
                   ),
@@ -69,7 +70,7 @@ class SignUpScreen extends StatelessWidget {
                   AppButton(
                     width: 300,
                     text: "Sign Up",
-                    color: Colors.lightBlue,
+                    color: Theme.of(context).primaryColor.withOpacity(0.5),
                     onPressed: () {
                       Navigator.pushNamed(context, Routes.signupScreen);
                     },
@@ -80,14 +81,18 @@ class SignUpScreen extends StatelessWidget {
                   RichText(
                     text: TextSpan(
                       children: [
-                        const TextSpan(
+                        TextSpan(
                           text: 'Already have an account? ',
-                          style: TextStyle(color: Colors.grey, fontSize: 16),
+                          style: TextStyle(
+                              color: Theme.of(context).primaryColorDark,
+                              fontSize: 16),
                         ),
                         TextSpan(
                           text: 'Log In',
-                          style: const TextStyle(
-                              color: Colors.lightBlue,
+                          style: TextStyle(
+                              color: Theme.of(context)
+                                  .primaryColorDark
+                                  .withOpacity(0.5),
                               fontSize: 16,
                               fontWeight: FontWeight.bold),
                           recognizer: TapGestureRecognizer()

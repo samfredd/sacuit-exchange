@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "734216900788",
+    "project_id": "sacuit-exchange",
+    "storage_bucket": "sacuit-exchange.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734216900788:android:28d968de4b3792bfe2c7e1",
+        "android_client_info": {
+          "package_name": "com.example.sacuit_exchange"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK30OjSN3VGzTaEj7RKIZb2dOHkxFwC4Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

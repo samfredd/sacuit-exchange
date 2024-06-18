@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sacuit_exchange/resources/router.dart';
+import 'package:sacuit_exchange/pages/settings/about/about.dart';
+import 'package:sacuit_exchange/pages/settings/profile/profile.dart';
 import 'package:sacuit_exchange/widgets/topbar.dart';
 
 class SettingsScreen extends StatelessWidget {
@@ -31,35 +32,50 @@ class SettingsScreen extends StatelessWidget {
                 children: [
                   SettingsTile(
                     onTap: () {
-                      Navigator.pushNamed(context, Routes.homePage);
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Profile()));
                     },
                     icon: Icons.person,
                     title: "Profile",
                   ),
                   SettingsTile(
                     onTap: () {
-                      Navigator.pushNamed(context, Routes.homePage);
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const About()));
                     },
                     icon: Icons.verified_user,
                     title: "KYC",
                   ),
                   SettingsTile(
                     onTap: () {
-                      Navigator.pushNamed(context, Routes.homePage);
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const About()));
                     },
                     icon: Icons.security,
                     title: "Security",
                   ),
                   SettingsTile(
                     onTap: () {
-                      Navigator.pushNamed(context, Routes.homePage);
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const About()));
                     },
                     icon: Icons.send,
                     title: "Transaction imits",
                   ),
                   SettingsTile(
                     onTap: () {
-                      Navigator.pushNamed(context, Routes.homePage);
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const About()));
                     },
                     icon: Icons.article,
                     title: "About",

@@ -22,10 +22,7 @@ class LoginScreen extends StatelessWidget {
                   ),
                   const Text(
                     "LOGIN",
-                    style: TextStyle(
-                        color: Colors.lightBlue,
-                        fontSize: 40,
-                        fontWeight: FontWeight.bold),
+                    style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(
                     height: 40,
@@ -62,14 +59,18 @@ class LoginScreen extends StatelessWidget {
                   RichText(
                     text: TextSpan(
                       children: [
-                        const TextSpan(
+                        TextSpan(
                           text: 'Don`t have an account? ',
-                          style: TextStyle(color: Colors.grey, fontSize: 16),
+                          style: TextStyle(
+                              color: Theme.of(context).primaryColorDark,
+                              fontSize: 16),
                         ),
                         TextSpan(
                           text: 'Sign Up',
-                          style: const TextStyle(
-                            color: Colors.lightBlue,
+                          style: TextStyle(
+                            color: Theme.of(context)
+                                .primaryColorDark
+                                .withOpacity(0.5),
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
                           ),
